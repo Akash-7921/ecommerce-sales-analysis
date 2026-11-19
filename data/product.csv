@@ -1,0 +1,11 @@
+product_id,product_name,category_id,price,stock
+PRD11,Samsung Galaxy S25,CAT01,74999,25
+PRD12,OnePlus 13,CAT01,64999,30
+PRD13,HP Pavilion 15,CAT02,68999,15
+PRD14,Dell Inspiron 14,CAT02,57999,20
+PRD15,Formal Shirt,CAT03,1499,75
+PRD16,Running Shoes,CAT03,2999,50
+PRD17,Data Analytics Book,CAT04,899,40
+PRD18,Computer Networks Book,CAT04,699,35
+PRD19,Study Table,CAT05,5999,12
+PRD20,Football,CAT06,1299,45

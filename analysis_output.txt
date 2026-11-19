@@ -1,0 +1,85 @@
+\ncustomers: rows=10, duplicate rows=0
+cust_id     0
+f_name      0
+l_name      0
+area        0
+phone_no    0
+dtype: int64
+\nproducts: rows=10, duplicate rows=0
+product_id      0
+product_name    0
+category_id     0
+price           0
+stock           0
+dtype: int64
+\norders: rows=10, duplicate rows=0
+order_id        0
+cust_id         0
+order_date      0
+total_amount    0
+dtype: int64
+\norder_items: rows=16, duplicate rows=0
+order_id      0
+product_id    0
+quantity      0
+price         0
+dtype: int64
+\npayments: rows=10, duplicate rows=0
+payment_id        0
+inv_no            0
+payment_date      0
+payment_mode      0
+payment_status    0
+dtype: int64
+\n--- Descriptive statistics ---
+       quantity         price  line_revenue  total_amount      stock
+count      16.0     16.000000     16.000000     16.000000  16.000000
+mean        1.0  14636.625000  14636.625000  16123.250000  41.187500
+std         0.0  27423.225864  27423.225864  26714.257877  20.769268
+min         1.0    200.000000    200.000000   1299.000000  12.000000
+25%         1.0    699.000000    699.000000   2297.750000  28.750000
+50%         1.0   1399.000000   1399.000000   2999.000000  40.000000
+75%         1.0   5999.000000   5999.000000   7498.000000  50.000000
+max         1.0  74999.000000  74999.000000  74999.000000  75.000000
+\n--- Payment status ---
+payment_status
+Paid       8
+Pending    2
+Name: count, dtype: int64
+\n--- Revenue by category ---
+category_name
+Mobiles      139998
+Laptops       68999
+Furniture     11998
+Fashion        8096
+Sports         2598
+Books          2497
+Name: line_revenue, dtype: int64
+\n--- Revenue by area ---
+area
+Pune      84895
+Delhi     70298
+Nashik    64999
+Nagpur     5999
+Mumbai     4996
+Thane      2999
+Name: line_revenue, dtype: int64
+\n--- Numeric correlation ---
+              quantity  price  line_revenue  total_amount  stock
+quantity           NaN    NaN           NaN           NaN    NaN
+price              NaN   1.00          1.00          1.00  -0.47
+line_revenue       NaN   1.00          1.00          1.00  -0.47
+total_amount       NaN   1.00          1.00          1.00  -0.44
+stock              NaN  -0.47         -0.47         -0.44   1.00
+\nAnalysis complete. Dataset and charts saved in: /mnt/data/ecommerce_capstone/visualizations
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
