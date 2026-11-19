@@ -10,7 +10,6 @@ This project focuses on analyzing e-commerce sales data using Python, SQL, and M
 - Pandas
 - NumPy
 - Matplotlib
-- Power BI
 
 ## Project Structure
 ```text
@@ -73,17 +72,27 @@ pip install mysql-connector-python
 - Execute `onlinestore.sql`.
 - Verify that all seven tables are created.
 
-### 4. Run Python Analysis
+### 4. Key Results
+
+- Total Sales: ₹2,34,186
+- Total Orders: 10
+- Average Order Value: ₹23,418.60
+- Top Revenue Category: Mobiles
+- Mobiles Revenue: ₹1,39,998
+
+Note: Results are based on the sample dataset included in this project.
+
+### 5. Run Python Analysis
 ```bash
 python analysis.py
 ```
 
-### 5. Run MySQL Connection Test
+### 6. Run MySQL Connection Test
 ```bash
 python mysql_test.py
 ```
 
-### 6. Run Python and MySQL Analysis
+### 7. Run Python and MySQL Analysis
 ```bash
 python mysql_analysis.py
 ```
